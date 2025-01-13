@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione per un app di music streaming</title>
+    <style>
+        body {
+            width: 1600px;
+            background-color: rgb(35, 34, 34);
+        color: rgb(240, 243, 245);
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        a {
+            color: chartreuse;
+        }
+
+        button{
+            color: rgb(35, 34, 34);
+            background-color: chartreuse;
+            border: 0px;
+            padding: 10px;
+            margin: 5px;
+            font-weight: bold;
+            border-radius: 5px;            
+        }
+        </style>
+</head>
+<body>
+<div class="testata registrazione">
+    <img src="spotify.png"width="200px"  alt="logo">
+    <h1>Registrazione</h1>
+    <p>Compila il modulo con i tuoi dati per effettuare la registrazione</p>
+</div>
+<div class="Modulo registrazione">
+    <form onsubmit="alert('Registrazione inviata!')">
+    <div>
+        <input type="text" placeholder="Il tuo nome">
+    </div>
+    <div>
+        <input type="text" placeholder="Il tuo cognome">
+    </div>
+    <div>
+        <input type="email" placeholder="La tua email">
+    </div>
+    <div>
+        <input type="password" placeholder="La tua password">
+    </div>
+    <div>
+        <input type="date">
+    </div>
+    <div>
+        <input type="number" placeholder="Il tuo N. telefonico">
+        <!-- Ho inserito l'attributo type="number" e il campo non accetta più testo ma funziona come un "contatore di numeri", spero sia quello che vine chiesto dall'esercizio -->
+    </div>
+    </div>
+    <h2>Quali generi musicali vorresti ascoltare?</h2>
+    <ul>
+        <li>Rock <input type="checkbox"></li>
+        <li>Metal <input type="checkbox"></li>
+        <li>Trap<input type="checkbox"></li>
+        <li>Trash<input type="checkbox"></li>
+        <li>K-POP<input type="checkbox"></li>
+        <li>Country<input type="checkbox"></li>
+    </ul>
+    <h3>Termini e condizioni</h3>
+    <p>Per iscirverti devi accettare i <a href="termini e condizioni.html">termini e le condizioni</a>:<br>Accetto<input type="radio"> Rifiuto<input type="radio"></p>
+    <button type="submit">Invia registrazione</button>    
+</form>
+</div>
+</body>
+</html>
